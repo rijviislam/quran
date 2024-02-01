@@ -1,26 +1,32 @@
 import Logo from "../assets/Logo.png"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
-// import { FaFacebookF } from "react-icons/fa6";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 export default function Nav() {
     return (
         <>
-            <footer className="footer flex flex-col  p-10 bg-[#E9E6D7] ">
-                <div className="flex gap-[90px]">
+            <footer className="footer flex flex-col  lg:p-10 bg-[#E9E6D7] w-full p-0 m-0">
+                <div className="flex gap-[90px] flex-col ">
 
-                    <div className="flex gap-[77px]">
+                    <div className="flex gap-[77px] flex-col">
 
-                        <nav className="border border-red-600 w-64 p-0 m-0">
+                        <nav className="w-64  h-auto flex flex-col gap-3">
 
-                            <h6 className="footer-title"><img src={Logo} alt="" /></h6>
-                            <a className="text-base font-normal ">© 2022 UIHUT All Rights Reserved</a>
-                            {/* <div className="flex gap-4">
-                                <FaFacebookF className="border border-red-500 text-3xl bg-[#D1CDB7] w-[40px] h-[80px]" />
-                                <FaTwitter className="border border-red-500 text-3xl bg-[#D1CDB7]" />
-                                <FaLinkedinIn className="border border-red-500 text-3xl bg-[#D1CDB7]" />
-                            </div> */}
+                            <h6 className="footer-title "><img src={Logo} alt="" /></h6>
+                            <a className="text-base font-normal">© 2022 UIHUT All Rights Reserved</a>
+                            <div className="flex gap-4 ">
+                                <div className="text-3xl bg-[#D1CDB7] p-3 rounded-full cursor-pointer hover:bg-[#F2AC0D] transition">
+                                    <FaFacebookF />
+                                </div>
+                                <div className="text-3xl bg-[#F2AC0D] p-3 rounded-full cursor-pointer hover:bg-[#D1CDB7] transition">
+                                    <FaTwitter />
+                                </div>
+                                <div className="text-3xl bg-[#D1CDB7] p-3 rounded-full cursor-pointer hover:bg-[#F2AC0D] transition">
+                                    <FaLinkedinIn />
+                                </div>
+                            </div>
                         </nav>
                         <nav className="flex flex-col gap-3 items-start">
                             <h6 className=" text-[#1C3F39] text-sm font-semibold mb-2">Navigate</h6>
@@ -38,7 +44,7 @@ export default function Nav() {
                             <a className="link link-hover">Previous.Quran.com</a>
                         </nav>
                     </div>
-                    <div className="flex gap-[77px]">
+                    <div className="flex gap-[77px] flex-col">
 
                         <nav className="flex flex-col gap-3 items-start">
                             <h6 className=" text-[#1C3F39] text-sm font-semibold mb-2">Popular Links</h6>

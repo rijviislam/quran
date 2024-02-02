@@ -7,10 +7,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Nav() {
     return (
         <>
-            <footer className="footer flex flex-col  lg:p-10 bg-[#E9E6D7] w-full p-0 m-0">
-                <div className="flex gap-[90px] flex-col ">
+            <footer className="footer flex flex-col   lg:p-10 bg-[#E9E6D7] w-full p-0 m-0">
+                <div className="flex gap-[90px] flex-col lg:flex-row">
 
-                    <div className="flex gap-[77px] flex-col">
+                    <div className="flex gap-[77px] flex-col lg:flex-row">
 
                         <nav className="w-64  h-auto flex flex-col gap-3">
 
@@ -44,7 +44,7 @@ export default function Nav() {
                             <a className="link link-hover">Previous.Quran.com</a>
                         </nav>
                     </div>
-                    <div className="flex gap-[77px] flex-col">
+                    <div className="flex gap-[77px] flex-col lg:flex-row">
 
                         <nav className="flex flex-col gap-3 items-start">
                             <h6 className=" text-[#1C3F39] text-sm font-semibold mb-2">Popular Links</h6>
@@ -72,7 +72,7 @@ export default function Nav() {
                     <div className="flex justify-end border-[#556561]  w-full border-b ">
                         <a href="#" className="btn bg-[#26534C] text-white hover:bg-[#F2AC0D]"><IoIosArrowUp /></a>
                     </div>
-                    <small className="text-center  flex items-center text-base font-normal gap-2">English <IoIosArrowDown /> </small>
+                    <small className="text-center  flex items-center text-base font-normal gap-2 cursor-pointer">English <IoIosArrowDown /> </small>
                 </div>
             </footer>
 

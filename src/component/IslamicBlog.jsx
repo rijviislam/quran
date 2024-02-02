@@ -4,7 +4,7 @@ import BlogImgThree from "../assets/Rectangle 72 (2).png"
 import BlogImgFour from "../assets/Rectangle 72 (3).png"
 export default function Nav() {
     return (
-        <>
+        <div className="lg:my-[170px]">
             <div>
                 <h1 className="text-[#1C3F39] font-bold text-2xl lg:text-[42px]">Latest Islamic blog</h1>
                 <p className="mt-5 text-[#556561] text-sm lg:text-base font-normal">Read top free Islamic articles & blog posts on the Internet <br /> and know about islam.</p>
@@ -61,7 +61,7 @@ export default function Nav() {
                 </div>
 
             </div>
-            <a href="" className="mt-7 lg:mt-16 btn font-semibold text-lg text-[#1C3F39] bg-[#F2AC0D] px-11 py-3">Read All</a>
-        </>
+            <a href="" className="mt-7 lg:mt-16 btn font-semibold bg-[#F2AC0D] hover:bg-[#1C3F39] transition hover:text-[#F2AC0D] px-11 py-3">Read All</a>
+        </div>
     );
 }

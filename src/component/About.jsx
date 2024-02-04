@@ -3,9 +3,9 @@ import AboutImgTwo from "../assets/Rectangle 1096.png"
 export default function About() {
     return (
         <div className="w-full px-4 my-[100px] flex lg:my-[170px] items-center justify-center lg:justify-center lg:h[412px] lg:items-center flex-col  gap-[38px] lg:flex-row lg:gap-[117px] ">
-            <div className="flex gap-5 lg:gap-7 w-[339px]">
-                <img src={AboutImg} alt="" className="w-[160px] h-[227px] lg:w-270px] lg:h- [382px]" />
-                <img src={AboutImgTwo} alt="" className="mt-7 w-[160px] h-[227px] lg:w-270px] lg:h- [382px]" />
+            <div className="flex gap-5 lg:gap-7 w-[339px] lg:w-[570px] lg:h-[412px] ">
+                <img src={AboutImg} alt="" className="lg:mb-7 mb-4 w-[160px]  lg:w-full lg:h-full object-contain" />
+                <img src={AboutImgTwo} alt="" className="lg:mt-7 mt-4 w-[160px] lg:w-full lg:h-full object-cover " />
             </div>
             <div className="lg:w-[470px] w-[339px]  flex items-start lg:items-start flex-col">
                 <h1 className="text-[#1C3F39] text-2xl lg:text-4xl font-bold">About holy quran</h1>
